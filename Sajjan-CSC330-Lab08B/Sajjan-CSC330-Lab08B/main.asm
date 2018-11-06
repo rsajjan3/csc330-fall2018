@@ -24,8 +24,8 @@ setup:
 	out PORTB, io_setup ;Set PORTB to off
 	out PORTD, io_setup ;Set PORTD to off
 
-	ldi leds_d, 0b00000000 ;Set the registers to 0 before incrementing, Set to 1 for knight_rider
-	ldi leds_b, 0b00000000 ; Set to 1 for I0_bit_knight_rider
+	ldi leds_d, 0b00000001 ;Set the registers to 0 before incrementing, Set to 1 for knight_rider
+	ldi leds_b, 0b00000001 ; Set to 1 for I0_bit_knight_rider
 
 	cpi leds_d, 0b00000000
 	breq loop
